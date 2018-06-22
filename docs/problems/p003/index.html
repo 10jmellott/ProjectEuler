@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Documentation - Project Euler</title>
+  <title>P3 - Largest Prime Factor - Project Euler</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Documentation";
-    var mkdocs_page_input_path = "shared_lib\\build_markdown.md";
-    var mkdocs_page_url = "/shared_lib/build_markdown/";
+    var mkdocs_page_name = "P3 - Largest Prime Factor";
+    var mkdocs_page_input_path = "problems\\p003.md";
+    var mkdocs_page_url = "/problems/p003/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -58,15 +58,18 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../problems/p001/">P1 - Multiples of 3 and 5</a>
+    <a class="" href="../p001/">P1 - Multiples of 3 and 5</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../problems/p002/">P2 - Even Fibonacci Numbers</a>
+    <a class="" href="../p002/">P2 - Even Fibonacci Numbers</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../../problems/p003/">P3 - Largest Prime Factor</a>
+    <a class="current" href="./">P3 - Largest Prime Factor</a>
+    <ul class="subnav">
+            
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -77,18 +80,15 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../__init__/">Intrinsic</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Documentation</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="../../shared_lib/__init__/">Intrinsic</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../stopwatch/">Stopwatch</a>
+    <a class="" href="../../shared_lib/build_markdown/">Documentation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../shared_lib/stopwatch/">Stopwatch</a>
                 </li>
     </ul>
 	    </li>
@@ -115,14 +115,14 @@
     
       
         
-          <li>Shared Library &raquo;</li>
+          <li>Problems &raquo;</li>
         
       
     
-    <li>Documentation</li>
+    <li>P3 - Largest Prime Factor</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/shared_lib/build_markdown.md"
+        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/problems/p003.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -132,146 +132,25 @@
           <div role="main">
             <div class="section">
               
-                <h1>Python Docstring to Markdown</h1>
+                <h1><a href="https://projecteuler.net/problem=3">Largest prime factor</a></h1>
 
 <h2>Summary</h2>
 
 <div style="margin-left: 30px;">
 <blockquote>
-<p>Attempts to parse a python document and resolve a markdown file with unique formatting.<br />
-Assumes Google's Docstring formatting.</p>
+<p>The prime factors of 13195 are 5, 7, 13 and 29.<br />
+What is the largest prime factor of the number 600851475143 ?</p>
 </blockquote>
 </div>
-<h2>Classes</h2>
-
-<div style="margin-left: 30px;">
-<pre><code class="python">class DocumentDocstring
-</code></pre>
-
-<div style="margin-left: 30px;">
-<h3>Constructors</h3>
-
-
-<pre><code class="python">DocumentDocstring(expression)
-</code></pre>
-
-<h3>Methods</h3>
-
-
-<pre><code class="python">def title()
-</code></pre>
-
-</div>
-</div>
-<hr />
-<pre><code class="python">class GoogleDocstringArgument
-</code></pre>
-
-<div style="margin-left: 30px;">
-<h3>Constructors</h3>
-
-
-<pre><code class="python">GoogleDocstringArgument(docstring)
-</code></pre>
-
-<h3>Methods</h3>
-
-
-<pre><code class="python">def name()
-</code></pre>
-
-<pre><code class="python">def arg_type()
-</code></pre>
-
-<pre><code class="python">def description()
-</code></pre>
-
-</div>
-<hr />
-<pre><code class="python">class GoogleDocstringReturn
-</code></pre>
-
-<div style="margin-left: 30px;">
-<h3>Constructors</h3>
-
-
-<pre><code class="python">GoogleDocstringReturn(docstring)
-</code></pre>
-
-<h3>Methods</h3>
-
-
-<pre><code class="python">def return_type()
-</code></pre>
-
-<pre><code class="python">def description()
-</code></pre>
-
-</div>
-<hr />
-<pre><code class="python">class GoogleFunctionDocstring
-</code></pre>
-
-<div style="margin-left: 30px;">
-<h3>Constructors</h3>
-
-
-<pre><code class="python">GoogleFunctionDocstring(function_def)
-</code></pre>
-
-<h3>Methods</h3>
-
-
-<pre><code class="python">def is_valid()
-</code></pre>
-
-<pre><code class="python">def name()
-</code></pre>
-
-<pre><code class="python">def short_description()
-</code></pre>
-
-<pre><code class="python">def arguments()
-</code></pre>
-
-<pre><code class="python">def return_description()
-</code></pre>
-
-</div>
-<hr />
-<pre><code class="python">class GoogleClassDocstring
-</code></pre>
-
-<div style="margin-left: 30px;">
-<h3>Constructors</h3>
-
-
-<pre><code class="python">GoogleClassDocstring(class_def)
-</code></pre>
-
-<h3>Methods</h3>
-
-
-<pre><code class="python">def name()
-</code></pre>
-
-<pre><code class="python">def constructors()
-</code></pre>
-
-<pre><code class="python">def methods()
-</code></pre>
-
-</div>
-</div>
-
 <h2>Intrinsic Functions</h2>
 
-<pre><code class="python">def parse_file(filename)
+<pre><code class="python">def main()
 </code></pre>
 
-<hr />
-<pre><code class="python">def cli()
-</code></pre>
+<div style="margin-left: 30px;">
+<p>Main method to run and set the parameters for this problem</p>
+<p>Returns <em>Integer</em>: Solution to this problem</p>
+</div>
               
             </div>
           </div>
@@ -279,10 +158,10 @@ Assumes Google's Docstring formatting.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../stopwatch/" class="btn btn-neutral float-right" title="Stopwatch">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../shared_lib/__init__/" class="btn btn-neutral float-right" title="Intrinsic">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../__init__/" class="btn btn-neutral" title="Intrinsic"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../p002/" class="btn btn-neutral" title="P2 - Even Fibonacci Numbers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -310,10 +189,10 @@ Assumes Google's Docstring formatting.</p>
           <a href="https://github.com/10jmellott/ProjectEuler/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../__init__/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../p002/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../stopwatch/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../shared_lib/__init__/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

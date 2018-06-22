@@ -7,10 +7,12 @@ pages:
 - Home: index.md
 - Problems:
   - P1 - Multiples of 3 and 5: problems/p001.md
-  - P2 - Even Fibonacci numbers: problems/p002.md
+  - P2 - Even Fibonacci Numbers: problems/p002.md
+  - P3 - Largest Prime Factor: problems/p003.md
 - Shared Library:
   - Intrinsic: shared_lib/__init__.md
   - Documentation: shared_lib/build_markdown.md
+  - Stopwatch: shared_lib/stopwatch.md
 
 # Define Markdown & HTML Build Options
 docs_dir: docs_md

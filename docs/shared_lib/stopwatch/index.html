@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Documentation - Project Euler</title>
+  <title>Stopwatch - Project Euler</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Documentation";
-    var mkdocs_page_input_path = "shared_lib\\build_markdown.md";
-    var mkdocs_page_url = "/shared_lib/build_markdown/";
+    var mkdocs_page_name = "Stopwatch";
+    var mkdocs_page_input_path = "shared_lib\\stopwatch.md";
+    var mkdocs_page_url = "/shared_lib/stopwatch/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -79,16 +79,16 @@
                     
     <a class="" href="../__init__/">Intrinsic</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../build_markdown/">Documentation</a>
+                </li>
                 <li class=" current">
                     
-    <a class="current" href="./">Documentation</a>
+    <a class="current" href="./">Stopwatch</a>
     <ul class="subnav">
             
     </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../stopwatch/">Stopwatch</a>
                 </li>
     </ul>
 	    </li>
@@ -119,10 +119,10 @@
         
       
     
-    <li>Documentation</li>
+    <li>Stopwatch</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/shared_lib/build_markdown.md"
+        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/shared_lib/stopwatch.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -132,146 +132,46 @@
           <div role="main">
             <div class="section">
               
-                <h1>Python Docstring to Markdown</h1>
+                <h1>Stopwatch</h1>
 
 <h2>Summary</h2>
 
 <div style="margin-left: 30px;">
 <blockquote>
-<p>Attempts to parse a python document and resolve a markdown file with unique formatting.<br />
-Assumes Google's Docstring formatting.</p>
+<p>A simple stopwatch implementation modified from <a href="https://gist.github.com/igniteflow/1253276">igniteflow's gist</a> (a github snippet repository).</p>
 </blockquote>
 </div>
 <h2>Classes</h2>
 
 <div style="margin-left: 30px;">
-<pre><code class="python">class DocumentDocstring
+<pre><code class="python">class Timer
 </code></pre>
 
 <div style="margin-left: 30px;">
-<h3>Constructors</h3>
-
-
-<pre><code class="python">DocumentDocstring(expression)
-</code></pre>
-
 <h3>Methods</h3>
 
 
-<pre><code class="python">def title()
+<pre><code class="python">def start()
 </code></pre>
 
+<div style="margin-left: 30px;"></div>
 </div>
+<div style="margin-left: 30px;"></div>
 </div>
-<hr />
-<pre><code class="python">class GoogleDocstringArgument
+<pre><code class="python">def stop()
+</code></pre>
+
+<p>hzzhzkh:4</p>
+<p>Stops the timer</p>
+<pre><code class="python">def elapsed()
 </code></pre>
 
 <div style="margin-left: 30px;">
-<h3>Constructors</h3>
-
-
-<pre><code class="python">GoogleDocstringArgument(docstring)
-</code></pre>
-
-<h3>Methods</h3>
-
-
-<pre><code class="python">def name()
-</code></pre>
-
-<pre><code class="python">def arg_type()
-</code></pre>
-
-<pre><code class="python">def description()
-</code></pre>
-
-</div>
-<hr />
-<pre><code class="python">class GoogleDocstringReturn
-</code></pre>
-
-<div style="margin-left: 30px;">
-<h3>Constructors</h3>
-
-
-<pre><code class="python">GoogleDocstringReturn(docstring)
-</code></pre>
-
-<h3>Methods</h3>
-
-
-<pre><code class="python">def return_type()
-</code></pre>
-
-<pre><code class="python">def description()
-</code></pre>
-
-</div>
-<hr />
-<pre><code class="python">class GoogleFunctionDocstring
-</code></pre>
-
-<div style="margin-left: 30px;">
-<h3>Constructors</h3>
-
-
-<pre><code class="python">GoogleFunctionDocstring(function_def)
-</code></pre>
-
-<h3>Methods</h3>
-
-
-<pre><code class="python">def is_valid()
-</code></pre>
-
-<pre><code class="python">def name()
-</code></pre>
-
-<pre><code class="python">def short_description()
-</code></pre>
-
-<pre><code class="python">def arguments()
-</code></pre>
-
-<pre><code class="python">def return_description()
-</code></pre>
-
-</div>
-<hr />
-<pre><code class="python">class GoogleClassDocstring
-</code></pre>
-
-<div style="margin-left: 30px;">
-<h3>Constructors</h3>
-
-
-<pre><code class="python">GoogleClassDocstring(class_def)
-</code></pre>
-
-<h3>Methods</h3>
-
-
-<pre><code class="python">def name()
-</code></pre>
-
-<pre><code class="python">def constructors()
-</code></pre>
-
-<pre><code class="python">def methods()
-</code></pre>
-
+<p>Time elapsed for this timer either since calling start or from start to stop if stop was called</p>
 </div>
 </div>
 
-<h2>Intrinsic Functions</h2>
-
-<pre><code class="python">def parse_file(filename)
-</code></pre>
-
-<hr />
-<pre><code class="python">def cli()
-</code></pre>
+</div>
               
             </div>
           </div>
@@ -279,10 +179,8 @@ Assumes Google's Docstring formatting.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../stopwatch/" class="btn btn-neutral float-right" title="Stopwatch">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../__init__/" class="btn btn-neutral" title="Intrinsic"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../build_markdown/" class="btn btn-neutral" title="Documentation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -310,10 +208,8 @@ Assumes Google's Docstring formatting.</p>
           <a href="https://github.com/10jmellott/ProjectEuler/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../__init__/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../build_markdown/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../stopwatch/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

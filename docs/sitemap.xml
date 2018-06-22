@@ -16,12 +16,22 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>/problems/p003/</loc>
+     <lastmod>2018-06-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>/shared_lib/__init__/</loc>
      <lastmod>2018-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/shared_lib/build_markdown/</loc>
+     <lastmod>2018-06-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/shared_lib/stopwatch/</loc>
      <lastmod>2018-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
