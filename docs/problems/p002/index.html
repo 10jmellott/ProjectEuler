@@ -137,11 +137,32 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 </div>
 <h2>Intrinsic Functions</h2>
 
-<pre><code class="python">def fib(n)
+<pre><code class="python">def fib_basic(n)
 </code></pre>
 
 <div style="margin-left: 30px;">
 <p>Simple fibonacci sequence implementation</p>
+<p>Returns <em>Integer</em>: Value of the fibonacci sequence at the provided index</p>
+</div>
+<hr />
+<pre><code class="python">def fib(n)
+</code></pre>
+
+<div style="margin-left: 30px;">
+<p>Optimized fibonacci sequence implementation utilizing memoization</p>
+<p>Returns <em>Integer</em>: Value of the fibonacci sequence at the provided index</p>
+</div>
+<hr />
+<pre><code class="python">def _fib(n, memoization)
+</code></pre>
+
+<div style="margin-left: 30px;">
+<p>[Internal] Recursive fibonacci sequence implementation utilizing memoization</p>
+<p>Args:</p>
+<ul>
+<li><strong>n</strong> <em>Integer</em>: Index of the fibonacci number</li>
+<li><strong>memoization</strong> <em>Dictionary</em>: Non-Null dictionary with prior memoized values</li>
+</ul>
 <p>Returns <em>Integer</em>: Value of the fibonacci sequence at the provided index</p>
 </div>
 <hr />

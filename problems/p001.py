@@ -27,7 +27,7 @@ def main():
         Integer: Solution to this problem
     """
 
-    N = 10
+    N = 1000
     L = [3, 5]
     sum = 0
     for n in range(N):

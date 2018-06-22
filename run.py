@@ -1,5 +1,9 @@
-from problems import p001
+"""Run.py
+A startup location to execute all problems
+"""
+
+from problems import p002
 
 print('Project Euler - https://projecteuler.net')
-print('Problem 1:')
-print(p001.main())
+print('Problem 2:')
+print(p002.main())
