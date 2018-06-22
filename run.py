@@ -1,8 +1,5 @@
-"""Entry point of the application to run
-"""
-
-from projects import p1
+from problems import p001
 
 print('Project Euler - https://projecteuler.net')
 print('Problem 1:')
-print(p1.main())
+print(p001.main())

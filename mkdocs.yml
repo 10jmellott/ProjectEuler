@@ -1,0 +1,23 @@
+# Define the Site
+site_name: "Project Euler"
+repo_url: https://github.com/10jmellott/ProjectEuler
+
+# Define the Site Layout
+pages:
+- Home: index.md
+- Problems:
+  - P1 - Multiples of 3 and 5: problems/p001.md
+  - P2 - Even Fibonacci numbers: problems/p002.md
+- Shared Library:
+  - Intrinsic: shared_lib/__init__.md
+  - Documentation: shared_lib/build_markdown.md
+
+# Define Markdown & HTML Build Options
+docs_dir: docs_md
+site_dir: docs
+theme:    readthedocs
+
+# Enable the extension to allow inline HTML & Markdown to work (kind-of) seamlessly
+markdown_extensions:
+- extra
+- toc
