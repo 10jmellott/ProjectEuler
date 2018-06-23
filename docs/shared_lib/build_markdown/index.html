@@ -136,53 +136,113 @@
 
 <h2>Summary</h2>
 
-<div style="margin-left: 30px;">
 <blockquote>
 <p>Attempts to parse a python document and resolve a markdown file with unique formatting.<br />
 Assumes Google's Docstring formatting.</p>
 </blockquote>
-</div>
 <h2>Classes</h2>
 
+<pre><code class="python">class HtmlMarkdownBuilder
+</code></pre>
+
 <div style="margin-left: 30px;">
+<h4>Constructors</h4>
+
+</div>
+<div style="margin-left: 30px;">
+<pre><code class="python">HtmlMarkdownBuilder()
+</code></pre>
+
+</div>
+<div style="margin-left: 30px;">
+<h4>Methods</h4>
+
+</div>
+<div style="margin-left: 30px;">
+<pre><code class="python">def append(markdown, div)
+</code></pre>
+
+</div>
+<div style="margin-left: 30px;">
+<pre><code class="python">def append_to_block(block)
+</code></pre>
+
+</div>
+<div style="margin-left: 30px;">
+<pre><code class="python">def complete_block()
+</code></pre>
+
+</div>
+<div style="margin-left: 30px;">
+<pre><code class="python">def indent()
+</code></pre>
+
+</div>
+<div style="margin-left: 30px;">
+<pre><code class="python">def deindent()
+</code></pre>
+
+</div>
+<div style="margin-left: 30px;">
+<pre><code class="python">def build()
+</code></pre>
+
+</div>
+<hr />
 <pre><code class="python">class DocumentDocstring
 </code></pre>
 
 <div style="margin-left: 30px;">
-<h3>Constructors</h3>
+<h4>Constructors</h4>
 
-
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">DocumentDocstring(expression)
 </code></pre>
 
-<h3>Methods</h3>
+</div>
+<div style="margin-left: 30px;">
+<h4>Methods</h4>
 
-
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def title()
 </code></pre>
 
 </div>
+<div style="margin-left: 30px;">
+<pre><code class="python">def body()
+</code></pre>
+
 </div>
 <hr />
 <pre><code class="python">class GoogleDocstringArgument
 </code></pre>
 
 <div style="margin-left: 30px;">
-<h3>Constructors</h3>
+<h4>Constructors</h4>
 
-
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">GoogleDocstringArgument(docstring)
 </code></pre>
 
-<h3>Methods</h3>
+</div>
+<div style="margin-left: 30px;">
+<h4>Methods</h4>
 
-
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def name()
 </code></pre>
 
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def arg_type()
 </code></pre>
 
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def description()
 </code></pre>
 
@@ -192,18 +252,24 @@ Assumes Google's Docstring formatting.</p>
 </code></pre>
 
 <div style="margin-left: 30px;">
-<h3>Constructors</h3>
+<h4>Constructors</h4>
 
-
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">GoogleDocstringReturn(docstring)
 </code></pre>
 
-<h3>Methods</h3>
+</div>
+<div style="margin-left: 30px;">
+<h4>Methods</h4>
 
-
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def return_type()
 </code></pre>
 
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def description()
 </code></pre>
 
@@ -213,27 +279,39 @@ Assumes Google's Docstring formatting.</p>
 </code></pre>
 
 <div style="margin-left: 30px;">
-<h3>Constructors</h3>
+<h4>Constructors</h4>
 
-
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">GoogleFunctionDocstring(function_def)
 </code></pre>
 
-<h3>Methods</h3>
+</div>
+<div style="margin-left: 30px;">
+<h4>Methods</h4>
 
-
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def is_valid()
 </code></pre>
 
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def name()
 </code></pre>
 
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def short_description()
 </code></pre>
 
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def arguments()
 </code></pre>
 
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def return_description()
 </code></pre>
 
@@ -243,27 +321,33 @@ Assumes Google's Docstring formatting.</p>
 </code></pre>
 
 <div style="margin-left: 30px;">
-<h3>Constructors</h3>
+<h4>Constructors</h4>
 
-
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">GoogleClassDocstring(class_def)
 </code></pre>
 
-<h3>Methods</h3>
+</div>
+<div style="margin-left: 30px;">
+<h4>Methods</h4>
 
-
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def name()
 </code></pre>
 
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def constructors()
 </code></pre>
 
+</div>
+<div style="margin-left: 30px;">
 <pre><code class="python">def methods()
 </code></pre>
 
 </div>
-</div>
-
 <h2>Intrinsic Functions</h2>
 
 <pre><code class="python">def parse_file(filename)

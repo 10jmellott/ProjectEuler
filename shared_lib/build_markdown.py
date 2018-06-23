@@ -7,6 +7,38 @@ import ast
 import re
 import sys
 
+class HtmlMarkdownBuilder:
+    
+    def __init__(self):
+        self._indentation = 0
+        self._lines = []
+        self._block = []
+    
+    def append(self, markdown, div = True):
+        if self._indentation > 0 and div:
+            self._lines.append('<div markdown="1" style="margin-left: {}px;">'.format(self._indentation * 30))
+        self._lines.append(markdown)
+        if self._indentation > 0 and div:
+            self._lines.append('</div>')
+    
+    def append_to_block(self, block):
+        self._block.append(block)
+
+    def complete_block(self):
+        if self._block:
+            self.append('\n'.join(self._block))
+            self._block = []
+
+    def indent(self):
+        self._indentation += 1
+
+    def deindent(self):
+        self._indentation -= 1
+
+    def build(self):
+        return '\n\n'.join(self._lines)
+
+
 class DocumentDocstring:
     def __init__(self, expression):
         self._exp = expression
@@ -154,128 +186,92 @@ def parse_file(filename):
         if isinstance(module, ast.FunctionDef):
             document_functions.append(GoogleFunctionDocstring(module))
 
-    result = []
+    builder = HtmlMarkdownBuilder()
 
     if document_summaries:
         for summary in document_summaries:
-            result.append('<h1>{}</h1>'.format(summary.title()))
-            result.append('')
-            result.append('<h2>Summary</h2>')
-            result.append('')
-            result.append('<div markdown="1" style="margin-left: 30px;">')
-            result.append('')
+            builder.append('<h1>{}</h1>'.format(summary.title()))
+            builder.append('<h2>Summary</h2>')
             for line in summary.body():
                 if line.strip():
-                    result.append('> {}'.format(line))
-            result.append('')
-            result.append('</div>')
-    
-    result.append('')
-    result.append('')
+                    builder.append_to_block('> {}'.format(line))
+            builder.complete_block()
 
     if document_classes:
-        result.append('')
-        result.append('<h2>Classes</h2>')
-        result.append('')
-        result.append('<div markdown="1" style="margin-left: 30px;">')
-        result.append('')
+        builder.append('<h2>Classes</h2>')
         for class_def in document_classes:
-            result.append('```python')
-            result.append('class {}'.format(class_def.name()))
-            result.append('```')
-            result.append('')
-            result.append('<div markdown="1" style="margin-left: 30px;">')
-            result.append('')
+            builder.append_to_block('```python')
+            builder.append_to_block('class {}'.format(class_def.name()))
+            builder.append_to_block('```')
+            builder.complete_block()
+            builder.indent()
             ctors = class_def.constructors()
             if ctors:
-                result.append('<h3>Constructors</h3>')
+                builder.append('<h4>Constructors</h4>')
                 for ctor in ctors:
-                    result.append('')
-                    result.append('```python')
-                    result.append(ctor.name().replace('__init__', class_def.name()))
-                    result.append('```')
+                    builder.append_to_block('```python')
+                    builder.append_to_block(ctor.name().replace('__init__', class_def.name()))
+                    builder.append_to_block('```')
+                    builder.complete_block()
+
                     if ctor.is_valid():
-                        result.append('')
-                        result.append('<div markdown="1" style="margin-left: 30px;">')
-                        result.append('')
-                        result.append(ctor.short_description())
-                        result.append('')
+                        builder.indent()
+                        builder.append(ctor.short_description())
                         args = ctor.arguments()
                         if args:
-                            result.append('Args:')
-                            result.append('')
+                            builder.append('Args:')
                             for arg in args:
-                                result.append('* **{}** *{}*: {}'.format(arg.name(), arg.arg_type(), arg.description()))
-                        result.append('')
-                        result.append('</div>')
+                                builder.append_to_block('* **{}** *{}*: {}'.format(arg.name(), arg.arg_type(), arg.description()))
+                            builder.complete_block()
+                        builder.deindent()
             mtds = class_def.methods()
             if mtds:
-                result.append('')
-                result.append('<h3>Methods</h3>')
+                builder.append('<h4>Methods</h4>')
                 for mtd in mtds:
-                    result.append('')
-                    result.append('```python')
-                    result.append('def {}'.format(mtd.name()))
-                    result.append('```')
+                    builder.append_to_block('```python')
+                    builder.append_to_block('def {}'.format(mtd.name()))
+                    builder.append_to_block('```')
+                    builder.complete_block()                    
                     if mtd.is_valid():
-                        result.append('')
-                        result.append('<div markdown="1" style="margin-left: 30px;">')
-                        result.append('')
-                        result.append(mtd.short_description())
-                        result.append('')
+                        builder.indent()
+                        builder.append(mtd.short_description())
                         args = mtd.arguments()
                         if args:
-                            result.append('Args:')
-                            result.append('')
+                            builder.append('Args:')
                             for arg in args:
-                                result.append('* **{}** *{}*: {}'.format(arg.name(), arg.arg_type(), arg.description()))
+                                builder.append_to_block('* **{}** *{}*: {}'.format(arg.name(), arg.arg_type(), arg.description()))
+                            builder.complete_block()
                         ret = mtd.return_description()
-                        result.append('')
-                        result.append('</div>')
-            result.append('')
-            result.append('</div>')
+                        builder.deindent()
             if class_def != document_classes[len(document_classes) - 1]:
-                result.append('')
-                result.append('------')
-            result.append('')
-        result.append('')
-        result.append('</div>')
-
-    result.append('')
-    result.append('')
+                builder.append('------', False)
+            builder.deindent()
 
     if document_functions:
-        result.append('')
-        result.append('<h2>Intrinsic Functions</h2>')
+        builder.append('<h2>Intrinsic Functions</h2>')
         for model in document_functions:
-            result.append('```python')
-            result.append('def {}'.format(model.name()))
-            result.append('```')
+            builder.append_to_block('```python')
+            builder.append_to_block('def {}'.format(model.name()))
+            builder.append_to_block('```')
+            builder.complete_block()
 
             if model.is_valid():
-                result.append('')
-                result.append('<div markdown="1" style="margin-left: 30px;">')
-                result.append('')
-                result.append(model.short_description())
-                result.append('')
+                builder.indent()
+                builder.append(model.short_description())
                 args = model.arguments()
                 if args:
-                    result.append('Args:')
-                    result.append('')
+                    builder.append('Args:')
                     for arg in args:
-                        result.append('* **{}** *{}*: {}'.format(arg.name(), arg.arg_type(), arg.description()))
+                        builder.append_to_block('* **{}** *{}*: {}'.format(arg.name(), arg.arg_type(), arg.description()))
+                    builder.complete_block()
                 ret = model.return_description()
                 if ret:
-                    result.append('')
-                    result.append('Returns *{}*: {}'.format(ret.return_type(), ret.description()))
-                result.append('')
-                result.append('</div>')
+                    builder.append('Returns *{}*: {}'.format(ret.return_type(), ret.description()))
+                builder.deindent()
             if model != document_functions[len(document_functions) - 1]:
-                result.append('')
-                result.append('------')
-            result.append('')
+                builder.append('------', False)
     
-    return '\n'.join(result)
+    return builder.build()
 
 
 def cli():
