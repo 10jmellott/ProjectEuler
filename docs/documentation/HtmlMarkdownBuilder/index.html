@@ -8,18 +8,19 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Stopwatch - Project Euler</title>
+  <title>Markdown Html Formatter - Project Euler</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../custom.css" rel="stylesheet">
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Stopwatch";
-    var mkdocs_page_input_path = "shared_lib\\stopwatch.md";
-    var mkdocs_page_url = "/shared_lib/stopwatch/";
+    var mkdocs_page_name = "Markdown Html Formatter";
+    var mkdocs_page_input_path = "documentation\\HtmlMarkdownBuilder.md";
+    var mkdocs_page_url = "/documentation/HtmlMarkdownBuilder/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -73,19 +74,34 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">Shared Library</span>
+    <span class="caption-text">Utils</span>
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../__init__/">Intrinsic</a>
+    <a class="" href="../../utils/stopwatch/">Stopwatch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Documentation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../__main__/">Main</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../build_markdown/">Documentation</a>
+    <a class="" href="../DocumentDocstring/">Document Header</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GoogleDocstring/">Google Docstring</a>
                 </li>
                 <li class=" current">
                     
-    <a class="current" href="./">Stopwatch</a>
+    <a class="current" href="./">Markdown Html Formatter</a>
     <ul class="subnav">
             
     </ul>
@@ -115,14 +131,14 @@
     
       
         
-          <li>Shared Library &raquo;</li>
+          <li>Documentation &raquo;</li>
         
       
     
-    <li>Stopwatch</li>
+    <li>Markdown Html Formatter</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/shared_lib/stopwatch.md"
+        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/documentation/HtmlMarkdownBuilder.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -132,45 +148,53 @@
           <div role="main">
             <div class="section">
               
-                <h1>Stopwatch</h1>
+                <h2>Classes</h2>
 
-<h2>Summary</h2>
-
-<blockquote>
-<p>A simple stopwatch implementation modified from <a href="https://gist.github.com/igniteflow/1253276">igniteflow's gist</a> (a github snippet repository).</p>
-</blockquote>
-<h2>Classes</h2>
-
-<pre><code class="python">class Timer
+<pre><code class="python">class HtmlMarkdownBuilder
 </code></pre>
 
+<div style="margin-left: 30px;">
+<h4>Constructors</h4>
+
+</div>
+<div style="margin-left: 30px;">
+<pre><code class="python">HtmlMarkdownBuilder()
+</code></pre>
+
+</div>
 <div style="margin-left: 30px;">
 <h4>Methods</h4>
 
 </div>
 <div style="margin-left: 30px;">
-<pre><code class="python">def start()
+<pre><code class="python">def append(markdown, div)
 </code></pre>
 
-</div>
-<div style="margin-left: 60px;">
-<p>Starts the timer</p>
 </div>
 <div style="margin-left: 30px;">
-<pre><code class="python">def stop()
+<pre><code class="python">def append_to_block(block)
 </code></pre>
 
-</div>
-<div style="margin-left: 60px;">
-<p>Stops the timer</p>
 </div>
 <div style="margin-left: 30px;">
-<pre><code class="python">def elapsed()
+<pre><code class="python">def complete_block()
 </code></pre>
 
 </div>
-<div style="margin-left: 60px;">
-<p>Time elapsed for this timer either since calling start or from start to stop if stop was called</p>
+<div style="margin-left: 30px;">
+<pre><code class="python">def indent()
+</code></pre>
+
+</div>
+<div style="margin-left: 30px;">
+<pre><code class="python">def deindent()
+</code></pre>
+
+</div>
+<div style="margin-left: 30px;">
+<pre><code class="python">def build()
+</code></pre>
+
 </div>
               
             </div>
@@ -180,7 +204,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="../build_markdown/" class="btn btn-neutral" title="Documentation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../GoogleDocstring/" class="btn btn-neutral" title="Google Docstring"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -208,7 +232,7 @@
           <a href="https://github.com/10jmellott/ProjectEuler/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../build_markdown/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../GoogleDocstring/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>

@@ -9,15 +9,21 @@ pages:
   - P1 - Multiples of 3 and 5: problems/p001.md
   - P2 - Even Fibonacci Numbers: problems/p002.md
   - P3 - Largest Prime Factor: problems/p003.md
-- Shared Library:
-  - Intrinsic: shared_lib/__init__.md
-  - Documentation: shared_lib/build_markdown.md
-  - Stopwatch: shared_lib/stopwatch.md
+- Utils:
+  - Stopwatch: utils/stopwatch.md
+- Documentation:
+  - Main: documentation/__main__.md
+  - Document Header: documentation/DocumentDocstring.md
+  - Google Docstring: documentation/GoogleDocstring.md
+  - Markdown Html Formatter: documentation/HtmlMarkdownBuilder.md
 
 # Define Markdown & HTML Build Options
 docs_dir: docs_md
 site_dir: docs
 theme:    readthedocs
+
+# Define some additional css
+extra_css: ["custom.css"]
 
 # Enable the extension to allow inline HTML & Markdown to work (kind-of) seamlessly
 markdown_extensions:

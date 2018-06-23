@@ -2,7 +2,8 @@
 A startup location to execute all problems
 """
 
-from shared_lib import stopwatch
+import utils.markdown
+from utils import stopwatch
 from problems import p003
 
 print('Project Euler - https://projecteuler.net')

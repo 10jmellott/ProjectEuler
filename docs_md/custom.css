@@ -1,0 +1,27 @@
+/* Change the color of the left-hand sidebar */
+.wy-nav-side {
+    background-color: #12121A;
+}
+
+.rst-versions .rst-current-version {
+    background-color: #12121A;
+}
+
+/* Hide the edit on github section */
+li.wy-breadcrumbs-aside {
+    visibility: collapse;
+}
+
+/* Format the code sections */
+code {
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+
+/* Something custom to enable the titles to not change hyperlink color */
+.title-custom-link {
+    color: inherit;
+}
+.title-custom-link:visited {
+    color: inherit;
+}

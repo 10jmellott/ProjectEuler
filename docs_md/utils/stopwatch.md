@@ -1,7 +1,5 @@
 <h1>Stopwatch</h1>
 
-<h2>Summary</h2>
-
 > A simple stopwatch implementation modified from [igniteflow's gist](https://gist.github.com/igniteflow/1253276) (a github snippet repository).
 
 <h2>Classes</h2>
@@ -9,6 +7,13 @@
 ```python
 class Timer
 ```
+
+<div markdown="1" style="margin-left: 30px;">
+
+A simple stopwatch.
+    
+
+</div>
 
 <div markdown="1" style="margin-left: 30px;">
 

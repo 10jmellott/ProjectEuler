@@ -1,14 +1,7 @@
-<h1>Python Docstring to Markdown</h1>
-
-<h2>Summary</h2>
-
-> Attempts to parse a python document and resolve a markdown file with unique formatting.  
-> Assumes Google's Docstring formatting.
-
 <h2>Classes</h2>
 
 ```python
-class HtmlMarkdownBuilder
+class GoogleDocstringReturn
 ```
 
 <div markdown="1" style="margin-left: 30px;">
@@ -20,7 +13,7 @@ class HtmlMarkdownBuilder
 <div markdown="1" style="margin-left: 30px;">
 
 ```python
-HtmlMarkdownBuilder()
+GoogleDocstringReturn(docstring)
 ```
 
 </div>
@@ -34,7 +27,7 @@ HtmlMarkdownBuilder()
 <div markdown="1" style="margin-left: 30px;">
 
 ```python
-def append(markdown, div)
+def return_type()
 ```
 
 </div>
@@ -42,81 +35,7 @@ def append(markdown, div)
 <div markdown="1" style="margin-left: 30px;">
 
 ```python
-def append_to_block(block)
-```
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-```python
-def complete_block()
-```
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-```python
-def indent()
-```
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-```python
-def deindent()
-```
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-```python
-def build()
-```
-
-</div>
-
-------
-
-```python
-class DocumentDocstring
-```
-
-<div markdown="1" style="margin-left: 30px;">
-
-<h4>Constructors</h4>
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-```python
-DocumentDocstring(expression)
-```
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-<h4>Methods</h4>
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-```python
-def title()
-```
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-```python
-def body()
+def description()
 ```
 
 </div>
@@ -159,48 +78,6 @@ def name()
 
 ```python
 def arg_type()
-```
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-```python
-def description()
-```
-
-</div>
-
-------
-
-```python
-class GoogleDocstringReturn
-```
-
-<div markdown="1" style="margin-left: 30px;">
-
-<h4>Constructors</h4>
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-```python
-GoogleDocstringReturn(docstring)
-```
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-<h4>Methods</h4>
-
-</div>
-
-<div markdown="1" style="margin-left: 30px;">
-
-```python
-def return_type()
 ```
 
 </div>
@@ -316,6 +193,14 @@ def name()
 <div markdown="1" style="margin-left: 30px;">
 
 ```python
+def description()
+```
+
+</div>
+
+<div markdown="1" style="margin-left: 30px;">
+
+```python
 def constructors()
 ```
 
@@ -328,15 +213,3 @@ def methods()
 ```
 
 </div>
-
-<h2>Intrinsic Functions</h2>
-
-```python
-def parse_file(filename)
-```
-
-------
-
-```python
-def cli()
-```

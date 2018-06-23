@@ -7,7 +7,7 @@ import datetime
 
 
 class Timer(object):
-    """A simple timer class
+    """A simple stopwatch.
     """
     
     def _now(self):
