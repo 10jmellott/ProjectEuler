@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/problems/p001/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/problems/p002/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/problems/p003/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <lastmod>2018-06-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/problems/p004/</loc>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/utils/stopwatch/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/utils/eratosthenes/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/documentation/__main__/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/documentation/DocumentDocstring/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/documentation/GoogleDocstring/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/documentation/HtmlMarkdownBuilder/</loc>
-     <lastmod>2018-06-23</lastmod>
+     <lastmod>2018-06-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

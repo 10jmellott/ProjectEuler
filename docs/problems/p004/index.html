@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Stopwatch - Project Euler</title>
+  <title>P4 - Largest Palindrome Product - Project Euler</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Stopwatch";
-    var mkdocs_page_input_path = "utils\\stopwatch.md";
-    var mkdocs_page_url = "/utils/stopwatch/";
+    var mkdocs_page_name = "P4 - Largest Palindrome Product";
+    var mkdocs_page_input_path = "problems\\p004.md";
+    var mkdocs_page_url = "/problems/p004/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -59,19 +59,22 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../problems/p001/">P1 - Multiples of 3 and 5</a>
+    <a class="" href="../p001/">P1 - Multiples of 3 and 5</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../problems/p002/">P2 - Even Fibonacci Numbers</a>
+    <a class="" href="../p002/">P2 - Even Fibonacci Numbers</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../problems/p003/">P3 - Largest Prime Factor</a>
+    <a class="" href="../p003/">P3 - Largest Prime Factor</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../../problems/p004/">P4 - Largest Palindrome Product</a>
+    <a class="current" href="./">P4 - Largest Palindrome Product</a>
+    <ul class="subnav">
+            
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -80,16 +83,13 @@
 		
     <span class="caption-text">Utils</span>
     <ul class="subnav">
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Stopwatch</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="../../utils/stopwatch/">Stopwatch</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../eratosthenes/">Eratosthenes</a>
+    <a class="" href="../../utils/eratosthenes/">Eratosthenes</a>
                 </li>
     </ul>
 	    </li>
@@ -139,14 +139,14 @@
     
       
         
-          <li>Utils &raquo;</li>
+          <li>Problems &raquo;</li>
         
       
     
-    <li>Stopwatch</li>
+    <li>P4 - Largest Palindrome Product</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/utils/stopwatch.md"
+        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/problems/p004.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -156,46 +156,40 @@
           <div role="main">
             <div class="section">
               
-                <h1>Stopwatch</h1>
+                <h1><a href="https://projecteuler.net/problem=4" class="title-custom-link">Largest palindrome product</a></h1>
 
 <blockquote>
-<p>A simple stopwatch implementation modified from <a href="https://gist.github.com/igniteflow/1253276">igniteflow's gist</a> (a github snippet repository).</p>
+<p>A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+Find the largest palindrome made from the product of two 3-digit numbers.</p>
 </blockquote>
-<h2>Classes</h2>
+<h2>Intrinsic Functions</h2>
 
-<pre><code class="python">class Timer
+<pre><code class="python">def is_palindrome(n)
 </code></pre>
 
 <div style="margin-left: 30px;">
-<p>A simple stopwatch.</p>
+<p>Tests if a number is a palindrome</p>
 </div>
 <div style="margin-left: 30px;">
-<h4>Methods</h4>
-
+<p>Args:</p>
 </div>
 <div style="margin-left: 30px;">
-<pre><code class="python">def start()
+<ul>
+<li><strong>n</strong> <em>Integer</em>: Integer to test palindromomity</li>
+</ul>
+</div>
+<div style="margin-left: 30px;">
+<p>Returns <em>Boolean</em>: True if n is a palindrome, false otherwise</p>
+</div>
+<hr />
+<pre><code class="python">def main()
 </code></pre>
 
-</div>
-<div style="margin-left: 60px;">
-<p>Starts the timer</p>
+<div style="margin-left: 30px;">
+<p>Main method to run and set the parameters for this problem</p>
 </div>
 <div style="margin-left: 30px;">
-<pre><code class="python">def stop()
-</code></pre>
-
-</div>
-<div style="margin-left: 60px;">
-<p>Stops the timer</p>
-</div>
-<div style="margin-left: 30px;">
-<pre><code class="python">def elapsed()
-</code></pre>
-
-</div>
-<div style="margin-left: 60px;">
-<p>Time elapsed for this timer either since calling start or from start to stop if stop was called</p>
+<p>Returns <em>Integer</em>: Solution to this problem</p>
 </div>
               
             </div>
@@ -204,10 +198,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../eratosthenes/" class="btn btn-neutral float-right" title="Eratosthenes">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../utils/stopwatch/" class="btn btn-neutral float-right" title="Stopwatch">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../problems/p004/" class="btn btn-neutral" title="P4 - Largest Palindrome Product"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../p003/" class="btn btn-neutral" title="P3 - Largest Prime Factor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -235,10 +229,10 @@
           <a href="https://github.com/10jmellott/ProjectEuler/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../problems/p004/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../p003/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../eratosthenes/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../utils/stopwatch/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

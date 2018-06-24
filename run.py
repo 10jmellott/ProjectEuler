@@ -3,16 +3,14 @@ A startup location to execute all problems
 """
 
 from utils import stopwatch
-from problems import p003
+from problems.p004 import main
 
 print('Project Euler - https://projecteuler.net')
-
-print('Problem 003:')
 
 timer = stopwatch.Timer()
 timer.start()
 
-ret = p003.main()
+ret = main()
 
 timer.stop()
 
