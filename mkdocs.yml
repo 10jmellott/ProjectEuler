@@ -11,6 +11,7 @@ pages:
   - P3 - Largest Prime Factor: problems/p003.md
 - Utils:
   - Stopwatch: utils/stopwatch.md
+  - Eratosthenes: utils/eratosthenes.md
 - Documentation:
   - Main: documentation/__main__.md
   - Document Header: documentation/DocumentDocstring.md

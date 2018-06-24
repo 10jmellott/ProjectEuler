@@ -4,7 +4,8 @@ What is the largest prime factor of the number 600851475143 ?
 """
 
 
-import time
+import math
+import utils.eratosthenes
 
 
 def main():
@@ -13,5 +14,14 @@ def main():
     Returns:
         Integer: Solution to this problem
     """
-    time.sleep(2.24)
-    return 0
+    N = 600851475143
+    # Prime factors of a number cannot be larger than the square root of a number
+    n = int(math.sqrt(N) + 1)
+    # Creates a list of primes and reverses them to go from largest to smallest
+    primes = reversed(utils.eratosthenes.sieve(n))
+    # Loop through the primes to find the first prime factor of N
+    for p in primes:
+        if N % p == 0:
+            return p
+    # N is prime
+    return 1

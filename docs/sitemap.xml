@@ -26,6 +26,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>/utils/eratosthenes/</loc>
+     <lastmod>2018-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>/documentation/__main__/</loc>
      <lastmod>2018-06-23</lastmod>
      <changefreq>daily</changefreq>

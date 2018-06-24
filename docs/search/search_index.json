@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to a python implementation of ProjectEuler!\n\n\nProject Documentation can be found here: \nhttps://10jmellott.github.io/ProjectEuler/\n\n\nSolved:\n\n\n\n\n001 - Multiples of 3 and 5\n\n\n002 - Even Fibonacci Numbers\n\n\n\n\nWIP:\n\n\n\n\n003 - Largest prime factor",
+            "text": "Welcome to a python implementation of ProjectEuler!\n\n\nProject Documentation can be found here: \nhttps://10jmellott.github.io/ProjectEuler/\n\n\nSolved:\n\n\n\n\n001 - Multiples of 3 and 5\n\n\n002 - Even Fibonacci Numbers\n\n\n003 - Largest prime factor\n\n\n\n\nWIP:\n\n\n\n\nNone",
             "title": "Home"
         },
         {
@@ -26,8 +26,13 @@
             "title": "Stopwatch"
         },
         {
+            "location": "/utils/eratosthenes/",
+            "text": "Eratosthenes' Algorithms\n\n\n\nIntrinsic Functions\n\n\n\ndef sieve(n)\n\n\n\n\n\n\nSieve of Eratosthenes\n - Finds prime numbers\n\n\n\n\n\n\nArgs:\n\n\n\n\n\n\n\n\nn\n \nInteger\n: Maximum value to look for primes under\n\n\n\n\n\n\n\n\nReturns \nInteger Array\n: Array of all primes less than n",
+            "title": "Eratosthenes"
+        },
+        {
             "location": "/documentation/__main__/",
-            "text": "Python Docstring to Markdown\n\n\n\n\n\nAttempts to parse a python document and resolve a markdown file with unique formatting.\n\nAssumes Google's Docstring formatting.\n\n\n\n\nIntrinsic Functions\n\n\n\ndef parse_file(filename)\n\n\n\n\n\n\ndef cli()\n\n\n\n\n\n\nCommand line interface parser. Parses input file and optional output",
+            "text": "Python Docstring to Markdown\n\n\n\n\n\nAttempts to parse a python document and resolve a markdown file with unique formatting.\n\nAssumes Google's Docstring formatting.\n\n\n\n\nIntrinsic Functions\n\n\n\ndef parse_file(filename)\n\n\n\n\n\n\ndef cli()\n\n\n\n\n\n\nCommand line interface. Parses input file and optional output file from the command line in sys.argv index 1 and 2 respectively.",
             "title": "Main"
         },
         {

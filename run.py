@@ -2,13 +2,12 @@
 A startup location to execute all problems
 """
 
-import utils.markdown
 from utils import stopwatch
 from problems import p003
 
 print('Project Euler - https://projecteuler.net')
 
-print('Problem 3:')
+print('Problem 003:')
 
 timer = stopwatch.Timer()
 timer.start()

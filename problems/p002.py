@@ -43,7 +43,6 @@ def _fib(n, memoization):
     Returns:
         Integer: Value of the fibonacci sequence at the provided index
     """
-
     if n == 0:
         return 0
     if n == 1:
