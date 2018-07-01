@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Stopwatch - Project Euler</title>
+  <title>Fibonacci - Project Euler</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Stopwatch";
-    var mkdocs_page_input_path = "utils\\stopwatch.md";
-    var mkdocs_page_url = "/utils/stopwatch/";
+    var mkdocs_page_name = "Fibonacci";
+    var mkdocs_page_input_path = "utils\\fibonacci.md";
+    var mkdocs_page_url = "/utils/fibonacci/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -84,20 +84,20 @@
 		
     <span class="caption-text">Utils</span>
     <ul class="subnav">
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Stopwatch</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="../stopwatch/">Stopwatch</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../eratosthenes/">Eratosthenes</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../fibonacci/">Fibonacci</a>
+    <a class="current" href="./">Fibonacci</a>
+    <ul class="subnav">
+            
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -151,10 +151,10 @@
         
       
     
-    <li>Stopwatch</li>
+    <li>Fibonacci</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/utils/stopwatch.md"
+        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/utils/fibonacci.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -164,46 +164,57 @@
           <div role="main">
             <div class="section">
               
-                <h1>Stopwatch</h1>
+                <h1>Fibonacci's Algorithms</h1>
 
-<blockquote>
-<p>A simple stopwatch implementation modified from <a href="https://gist.github.com/igniteflow/1253276">igniteflow's gist</a> (a github snippet repository).</p>
-</blockquote>
-<h2>Classes</h2>
+<h2>Intrinsic Functions</h2>
 
-<pre><code class="python">class Timer
+<pre><code class="python">def trial_division(n)
 </code></pre>
 
 <div style="margin-left: 30px;">
-<p>A simple stopwatch.</p>
+<p><a href="https://en.wikipedia.org/wiki/Trial_division">Trial Division</a></p>
 </div>
 <div style="margin-left: 30px;">
-<h4>Methods</h4>
-
+<p>Returns <em>Array</em>: List of factors of n</p>
 </div>
-<div style="margin-left: 30px;">
-<pre><code class="python">def start()
+<hr />
+<pre><code class="python">def fib_basic(n)
 </code></pre>
 
-</div>
-<div style="margin-left: 60px;">
-<p>Starts the timer</p>
+<div style="margin-left: 30px;">
+<p>Simple fibonacci sequence implementation</p>
 </div>
 <div style="margin-left: 30px;">
-<pre><code class="python">def stop()
+<p>Returns <em>Integer</em>: Value of the fibonacci sequence at the provided index</p>
+</div>
+<hr />
+<pre><code class="python">def fib(n)
 </code></pre>
 
-</div>
-<div style="margin-left: 60px;">
-<p>Stops the timer</p>
+<div style="margin-left: 30px;">
+<p>Optimized fibonacci sequence implementation utilizing memoization</p>
 </div>
 <div style="margin-left: 30px;">
-<pre><code class="python">def elapsed()
+<p>Returns <em>Integer</em>: Value of the fibonacci sequence at the provided index</p>
+</div>
+<hr />
+<pre><code class="python">def _fib(n, memoization)
 </code></pre>
 
+<div style="margin-left: 30px;">
+<p>[Internal] Recursive fibonacci sequence implementation utilizing memoization</p>
 </div>
-<div style="margin-left: 60px;">
-<p>Time elapsed for this timer either since calling start or from start to stop if stop was called</p>
+<div style="margin-left: 30px;">
+<p>Args:</p>
+</div>
+<div style="margin-left: 30px;">
+<ul>
+<li><strong>n</strong> <em>Integer</em>: Index of the fibonacci number</li>
+<li><strong>memoization</strong> <em>Dictionary</em>: Non-Null dictionary with prior memoized values</li>
+</ul>
+</div>
+<div style="margin-left: 30px;">
+<p>Returns <em>Integer</em>: Value of the fibonacci sequence at the provided index</p>
 </div>
               
             </div>
@@ -212,10 +223,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../eratosthenes/" class="btn btn-neutral float-right" title="Eratosthenes">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../documentation/__main__/" class="btn btn-neutral float-right" title="Main">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../problems/p005/" class="btn btn-neutral" title="P5 - Smallest Multiple"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../eratosthenes/" class="btn btn-neutral" title="Eratosthenes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -243,10 +254,10 @@
           <a href="https://github.com/10jmellott/ProjectEuler/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../problems/p005/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../eratosthenes/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../eratosthenes/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../documentation/__main__/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

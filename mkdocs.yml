@@ -10,9 +10,11 @@ pages:
   - P2 - Even Fibonacci Numbers: problems/p002.md
   - P3 - Largest Prime Factor: problems/p003.md
   - P4 - Largest Palindrome Product: problems/p004.md
+  - P5 - Smallest Multiple: problems/p005.md
 - Utils:
   - Stopwatch: utils/stopwatch.md
   - Eratosthenes: utils/eratosthenes.md
+  - Fibonacci: utils/fibonacci.md
 - Documentation:
   - Main: documentation/__main__.md
   - Document Header: documentation/DocumentDocstring.md

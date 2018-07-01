@@ -3,7 +3,7 @@ A startup location to execute all problems
 """
 
 from utils import stopwatch
-from problems.p004 import main
+from problems.p005 import main
 
 print('Project Euler - https://projecteuler.net')
 

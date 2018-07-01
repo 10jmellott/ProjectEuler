@@ -9,6 +9,7 @@ Solved:
 * [002 - Even Fibonacci Numbers](https://10jmellott.github.io/ProjectEuler/problems/p002/)
 * [003 - Largest Prime Factor](https://10jmellott.github.io/ProjectEuler/problems/p003/)
 * [004 - Largest Palindrome Product](https://10jmellott.github.io/ProjectEuler/problems/p004/)
+* [005 - Smallest Multiple](https://10jmellott.github.io/ProjectEuler/problems/p005/)
 
 WIP:
 
