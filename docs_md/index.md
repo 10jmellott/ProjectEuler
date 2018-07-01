@@ -10,6 +10,7 @@ Solved:
 * [003 - Largest Prime Factor](https://10jmellott.github.io/ProjectEuler/problems/p003/)
 * [004 - Largest Palindrome Product](https://10jmellott.github.io/ProjectEuler/problems/p004/)
 * [005 - Smallest Multiple](https://10jmellott.github.io/ProjectEuler/problems/p005/)
+* [006 - Sum Square Difference](https://10jmellott.github.io/ProjectEuler/problems/p006/)
 
 WIP:
 

@@ -11,10 +11,12 @@ pages:
   - P3 - Largest Prime Factor: problems/p003.md
   - P4 - Largest Palindrome Product: problems/p004.md
   - P5 - Smallest Multiple: problems/p005.md
+  - P6 - Sum Square Difference: problems/p006.md
 - Utils:
   - Stopwatch: utils/stopwatch.md
   - Eratosthenes: utils/eratosthenes.md
   - Fibonacci: utils/fibonacci.md
+  - OEIS: utils/oeis.md
 - Documentation:
   - Main: documentation/__main__.md
   - Document Header: documentation/DocumentDocstring.md

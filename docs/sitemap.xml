@@ -31,6 +31,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>/problems/p006/</loc>
+     <lastmod>2018-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>/utils/stopwatch/</loc>
      <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
@@ -42,6 +47,11 @@
     </url>
     <url>
      <loc>/utils/fibonacci/</loc>
+     <lastmod>2018-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/utils/oeis/</loc>
      <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
