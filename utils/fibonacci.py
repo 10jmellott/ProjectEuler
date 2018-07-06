@@ -27,6 +27,25 @@ def trial_division(n):
     return a
 
 
+def factors_to_dictionary(factors):
+    """Transforms a list of factors into a dictionary
+    
+    Args:
+        factors (list): List of factors
+    
+    Returns:
+        dict: Dictionary of factors to count
+    """
+
+    factor_dict = {}
+    for factor in factors:
+        if factor in factor_dict:
+            factor_dict[factor] = factor_dict[factor] + 1
+        else:
+            factor_dict[factor] = 1
+    return factor_dict
+
+
 def fib_basic(n):
     """Simple fibonacci sequence implementation
     

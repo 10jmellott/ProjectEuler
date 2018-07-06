@@ -4,6 +4,7 @@ What is the smallest positive number that is evenly divisible by all of the numb
 """
 
 from utils.fibonacci import trial_division
+from utils.fibonacci import factors_to_dictionary
 
 def main():
     """Main method to run and set the parameters for this problem
@@ -19,12 +20,7 @@ def main():
         # Factor the number
         factors = trial_division(i)
         # Create a dictionary of the number of instances of the prime factor for i
-        factor_dict = {}
-        for factor in factors:
-            if factor in factor_dict:
-                factor_dict[factor] = factor_dict[factor] + 1
-            else:
-                factor_dict[factor] = 1
+        factor_dict = factors_to_dictionary(factors)
         # Compare the factor_dictionary to the minimum_factors dictionary and set values appropriately
         #   What this does is ensures that the minimum number of instances of factors is present in the output
         for factor, count in factor_dict.items():

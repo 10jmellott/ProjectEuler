@@ -2,77 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/problems/p001/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/problems/p002/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/problems/p003/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/problems/p004/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/problems/p005/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/problems/p006/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/problems/p007/</loc>
+     <lastmod>2018-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/problems/p008/</loc>
+     <lastmod>2018-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/problems/p009/</loc>
+     <lastmod>2018-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/problems/p010/</loc>
+     <lastmod>2018-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/problems/p011/</loc>
+     <lastmod>2018-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/problems/p012/</loc>
+     <lastmod>2018-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/problems/p013/</loc>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/utils/stopwatch/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/utils/eratosthenes/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/utils/fibonacci/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/utils/oeis/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/documentation/__main__/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/documentation/DocumentDocstring/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/documentation/GoogleDocstring/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/documentation/HtmlMarkdownBuilder/</loc>
-     <lastmod>2018-06-30</lastmod>
+     <lastmod>2018-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -11,6 +11,13 @@ Solved:
 * [004 - Largest Palindrome Product](https://10jmellott.github.io/ProjectEuler/problems/p004/)
 * [005 - Smallest Multiple](https://10jmellott.github.io/ProjectEuler/problems/p005/)
 * [006 - Sum Square Difference](https://10jmellott.github.io/ProjectEuler/problems/p006/)
+* [007 - 10001st Prime](https://10jmellott.github.io/ProjectEuler/problems/p007/)
+* [008 - Largest Product in a Series](https://10jmellott.github.io/ProjectEuler/problems/p008/)
+* [009 - Special Pythagorean Triplet](https://10jmellott.github.io/ProjectEuler/problems/p009/)
+* [010 - Summation of Primes](https://10jmellott.github.io/ProjectEuler/problems/p010/)
+* [011 - Largest Product in a Grid](https://10jmellott.github.io/ProjectEuler/problems/p011/)
+* [012 - Highly Divisible Triangular Number](https://10jmellott.github.io/ProjectEuler/problems/p012/)
+* [013 - Large Sum](https://10jmellott.github.io/ProjectEuler/problems/p013/)
 
 WIP:
 

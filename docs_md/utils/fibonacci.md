@@ -21,6 +21,36 @@ Returns *Array*: List of factors of n
 ------
 
 ```python
+def factors_to_dictionary(factors)
+```
+
+<div markdown="1" style="margin-left: 30px;">
+
+Transforms a list of factors into a dictionary
+
+</div>
+
+<div markdown="1" style="margin-left: 30px;">
+
+Args:
+
+</div>
+
+<div markdown="1" style="margin-left: 30px;">
+
+* **factors** *list*: List of factors
+
+</div>
+
+<div markdown="1" style="margin-left: 30px;">
+
+Returns *dict*: Dictionary of factors to count
+
+</div>
+
+------
+
+```python
 def fib_basic(n)
 ```
 

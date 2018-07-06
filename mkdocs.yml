@@ -12,6 +12,13 @@ pages:
   - P4 - Largest Palindrome Product: problems/p004.md
   - P5 - Smallest Multiple: problems/p005.md
   - P6 - Sum Square Difference: problems/p006.md
+  - P7 - 10001st Prime: problems/p007.md
+  - P8 - Largest Product in a Series: problems/p008.md
+  - P9 - Special Pythagorean Triplet: problems/p009.md
+  - P10 - Summation of Primes: problems/p010.md
+  - P11 - Largest Product in a Grid: problems/p011.md
+  - P12 - Highly Divisible Triangular Number: problems/p012.md
+  - P13 - Large Sum: problems/p013.md
 - Utils:
   - Stopwatch: utils/stopwatch.md
   - Eratosthenes: utils/eratosthenes.md
