@@ -32,6 +32,7 @@ def start()
 <div markdown="1" style="margin-left: 60px;">
 
 Starts the timer
+        
 
 </div>
 
@@ -46,6 +47,7 @@ def stop()
 <div markdown="1" style="margin-left: 60px;">
 
 Stops the timer
+        
 
 </div>
 
@@ -60,5 +62,6 @@ def elapsed()
 <div markdown="1" style="margin-left: 60px;">
 
 Time elapsed for this timer either since calling start or from start to stop if stop was called
+
 
 </div>

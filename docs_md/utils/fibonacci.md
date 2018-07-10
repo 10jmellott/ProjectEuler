@@ -10,6 +10,10 @@ def trial_division(n)
 
 [Trial Division](https://en.wikipedia.org/wiki/Trial_division)
 
+Arguments:
+    n (Integer): Number to factor
+
+
 </div>
 
 <div markdown="1" style="margin-left: 30px;">
@@ -27,6 +31,7 @@ def factors_to_dictionary(factors)
 <div markdown="1" style="margin-left: 30px;">
 
 Transforms a list of factors into a dictionary
+
 
 </div>
 
@@ -58,6 +63,10 @@ def fib_basic(n)
 
 Simple fibonacci sequence implementation
 
+Arguments:
+    n (Integer): Index of the fibonacci number
+
+
 </div>
 
 <div markdown="1" style="margin-left: 30px;">
@@ -76,6 +85,10 @@ def fib(n)
 
 Optimized fibonacci sequence implementation utilizing memoization
 
+Arguments:
+    n (Integer): Index of the fibonacci number
+
+
 </div>
 
 <div markdown="1" style="margin-left: 30px;">
@@ -93,6 +106,7 @@ def _fib(n, memoization)
 <div markdown="1" style="margin-left: 30px;">
 
 [Internal] Recursive fibonacci sequence implementation utilizing memoization
+
 
 </div>
 

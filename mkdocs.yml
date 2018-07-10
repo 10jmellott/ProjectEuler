@@ -19,6 +19,13 @@ pages:
   - P11 - Largest Product in a Grid: problems/p011.md
   - P12 - Highly Divisible Triangular Number: problems/p012.md
   - P13 - Large Sum: problems/p013.md
+  - P14 - Longest Collatz Sequence: problems/p014.md
+  - P15 - Lattice Paths: problems/p015.md
+  - P16 - Power Digit Sum: problems/p016.md
+  - P17 - Number Letter Counts: problems/p017.md
+  - P18 - Maximum Path Sum I: problems/p018.md
+  - P19 - Counting Sundays: problems/p019.md
+  - P20 - Factorial Digit Sum: problems/p020.md
 - Utils:
   - Stopwatch: utils/stopwatch.md
   - Eratosthenes: utils/eratosthenes.md

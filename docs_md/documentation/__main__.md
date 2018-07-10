@@ -18,5 +18,6 @@ def cli()
 <div markdown="1" style="margin-left: 30px;">
 
 Command line interface. Parses input file and optional output file from the command line in sys.argv index 1 and 2 respectively.
+    
 
 </div>

@@ -109,6 +109,34 @@
                     
     <a class="" href="../../problems/p013/">P13 - Large Sum</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../../problems/p014/">P14 - Longest Collatz Sequence</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../problems/p015/">P15 - Lattice Paths</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../problems/p016/">P16 - Power Digit Sum</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../problems/p017/">P17 - Number Letter Counts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../problems/p018/">P18 - Maximum Path Sum I</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../problems/p019/">P19 - Counting Sundays</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../problems/p020/">P20 - Factorial Digit Sum</a>
+                </li>
     </ul>
 	    </li>
           
@@ -200,7 +228,7 @@
           <div role="main">
             <div class="section">
               
-                <h1><a href="https://projecteuler.net/problem=6" class="title-custom-link">The On-Line Encyclopedia of Integer Sequences</a></h1>
+                <h1><a href="https://oeis.org/" class="title-custom-link">The On-Line Encyclopedia of Integer Sequences</a></h1>
 
 <blockquote>
 <p>This is an online database of useful sequences and some initial values to quickly 
@@ -208,11 +236,31 @@ retrieve a formula rather than coming up with one yourself.</p>
 </blockquote>
 <h2>Intrinsic Functions</h2>
 
+<pre><code class="python">def collatz(n)
+</code></pre>
+
+<div style="margin-left: 30px;">
+<p><a href="https://oeis.org/A006370">Collatz Sequence</a></p>
+</div>
+<div style="margin-left: 30px;">
+<p>Args:</p>
+</div>
+<div style="margin-left: 30px;">
+<ul>
+<li><strong>n</strong> <em>Integer</em>: Current Value of the Collatz Sequence</li>
+</ul>
+</div>
+<div style="margin-left: 30px;">
+<p>Returns <em>Integer</em>: Result of the next value in the Collatz Sequence following n</p>
+</div>
+<hr />
 <pre><code class="python">def square_pyramidal_numbers(n)
 </code></pre>
 
 <div style="margin-left: 30px;">
 <p><a href="https://oeis.org/A000330">Square Pyramidal Numbers - A000330</a></p>
+<p>Arguments:
+    n (Integer): Index of the sequence</p>
 </div>
 <div style="margin-left: 30px;">
 <p>Returns <em>Integer</em>: Value of this sequence at the specified index</p>
@@ -223,6 +271,8 @@ retrieve a formula rather than coming up with one yourself.</p>
 
 <div style="margin-left: 30px;">
 <p><a href="https://oeis.org/A000217">Triangular Numbers - A000217</a></p>
+<p>Arguments:
+    n (Integer): Index of the sequence</p>
 </div>
 <div style="margin-left: 30px;">
 <p>Returns <em>Integer</em>: Value of this sequence at the specified index</p>

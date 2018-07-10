@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to a python implementation of ProjectEuler!\n\n\nProject Documentation can be found here: \nhttps://10jmellott.github.io/ProjectEuler/\n\n\nSolved:\n\n\n\n\n001 - Multiples of 3 and 5\n\n\n002 - Even Fibonacci Numbers\n\n\n003 - Largest Prime Factor\n\n\n004 - Largest Palindrome Product\n\n\n005 - Smallest Multiple\n\n\n006 - Sum Square Difference\n\n\n007 - 10001st Prime\n\n\n008 - Largest Product in a Series\n\n\n009 - Special Pythagorean Triplet\n\n\n010 - Summation of Primes\n\n\n011 - Largest Product in a Grid\n\n\n012 - Highly Divisible Triangular Number\n\n\n013 - Large Sum\n\n\n\n\nWIP:\n\n\n\n\nNone",
+            "text": "Welcome to a python implementation of ProjectEuler!\n\n\nProject Documentation can be found here: \nhttps://10jmellott.github.io/ProjectEuler/\n\n\nSolved:\n\n\n\n\n001 - Multiples of 3 and 5\n\n\n002 - Even Fibonacci Numbers\n\n\n003 - Largest Prime Factor\n\n\n004 - Largest Palindrome Product\n\n\n005 - Smallest Multiple\n\n\n006 - Sum Square Difference\n\n\n007 - 10001st Prime\n\n\n008 - Largest Product in a Series\n\n\n009 - Special Pythagorean Triplet\n\n\n010 - Summation of Primes\n\n\n011 - Largest Product in a Grid\n\n\n012 - Highly Divisible Triangular Number\n\n\n013 - Large Sum\n\n\n014 - Longest Collatz Sequence\n\n\n015 - Lattice Paths\n\n\n016 - Power Digit Sum\n\n\n017 - Number Letter Counts\n\n\n018 - Maximum Path Sum I\n\n\n019 - Counting Sundays\n\n\n020 - Factorial Digit Sum\n\n\n\n\nAuthor: \nJoshua Mellott-Lillie",
             "title": "Home"
         },
         {
@@ -37,22 +37,22 @@
         },
         {
             "location": "/problems/p007/",
-            "text": "10001st prime\n\n\n\n\n\nBy listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.\n\nWhat is the 10 001st prime number?\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves the problem\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "text": "10001st prime\n\n\n\n\n\nBy listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.\n\nWhat is the 10 001st prime number?\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves the problem\n\n\nContinues to calculate all primes below a threshold until the \nnumber of primes is more than the required index.\n\n\nUtilizes the Sieve of Eratosthenes\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
             "title": "P7 - 10001st Prime"
         },
         {
             "location": "/problems/p008/",
-            "text": "Largest product in a series\n\n\n\n\n\nThe four adjacent digits in the 1000-digit number that have the greatest product are 9 \u00d7 9 \u00d7 8 \u00d7 9 = 5832.\n\n(SEE PROJECT EULER OR INPUT FOLDER FOR NUMBER)\n\nFind the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves the problem\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "text": "Largest product in a series\n\n\n\n\n\nThe four adjacent digits in the 1000-digit number that have the greatest product are 9 \u00d7 9 \u00d7 8 \u00d7 9 = 5832.\n\n(SEE PROJECT EULER OR INPUT FOLDER FOR NUMBER)\n\nFind the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves the problem\n\n\nBrute force approach that moves a cursor position along the number (as an array of the character digits)\nNo storage of the previous product was necessary for only 13 length (& 1000 digits)\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
             "title": "P8 - Largest Product in a Series"
         },
         {
             "location": "/problems/p009/",
-            "text": "Special Pythagorean Triplet\n\n\n\n\n\nA Pythagorean triplet is a set of three natural numbers, \na\n < \nb\n < \nc\n, for which,\n\na\n2\n + b\n2\n = c\n2\n\nFor example, 3\n2\n + 4\n2\n = 9 + 16 = 25 = 5\n2\n.\n\nThere exists exactly one Pythagorean triplet for which a + b + c = 1000.\n\nFind the product \nabc\n.\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "text": "Special Pythagorean Triplet\n\n\n\n\n\nA Pythagorean triplet is a set of three natural numbers, \na\n < \nb\n < \nc\n, for which,\n\na\n2\n + b\n2\n = c\n2\n\nFor example, 3\n2\n + 4\n2\n = 9 + 16 = 25 = 5\n2\n.\n\nThere exists exactly one Pythagorean triplet for which a + b + c = 1000.\n\nFind the product \nabc\n.\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nBrute force solution that checks all possible values with the constrains that solve this:\na < b < c and a + b + c = 1000\nAs stated in the problem, there only exists one, so I return the first one to resolve as a triplet\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
             "title": "P9 - Special Pythagorean Triplet"
         },
         {
             "location": "/problems/p010/",
-            "text": "Summation of Primes\n\n\n\n\n\nThe sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.\n\nFind the sum of all the primes below two million.\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "text": "Summation of Primes\n\n\n\n\n\nThe sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.\n\nFind the sum of all the primes below two million.\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nUtilizes the Sieve of Eratosthenes and the python sum function.\nThis was a simple one...\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
             "title": "P10 - Summation of Primes"
         },
         {
@@ -62,13 +62,48 @@
         },
         {
             "location": "/problems/p012/",
-            "text": "Highly divisible triangular number\n\n\n\n\n\nThe sequence of triangle numbers is generated by adding the natural numbers. So the 7th triangle \nnumber would be 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28. The first ten terms would be:\n\n1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...\n\nLet us list the factors of the first seven triangle numbers:\n\n 1: 1\n\n 3: 1,3\n\n 6: 1,2,3,6\n\n10: 1,2,5,10\n\n15: 1,3,5,15\n\n21: 1,3,7,21\n\n28: 1,2,4,7,14,28\n\nWe can see that 28 is the first triangle number to have over five divisors.\n\nWhat is the value of the first triangle number to have over five hundred divisors?\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "text": "Highly divisible triangular number\n\n\n\n\n\nThe sequence of triangle numbers is generated by adding the natural numbers. So the 7th triangle \nnumber would be 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28. The first ten terms would be:\n\n1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...\n\nLet us list the factors of the first seven triangle numbers:\n\n 1: 1\n\n 3: 1,3\n\n 6: 1,2,3,6\n\n10: 1,2,5,10\n\n15: 1,3,5,15\n\n21: 1,3,7,21\n\n28: 1,2,4,7,14,28\n\nWe can see that 28 is the first triangle number to have over five divisors.\n\nWhat is the value of the first triangle number to have over five hundred divisors?\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nUtilizes \nA000005\n which is solved via a \nlemma to Euler's Totient Function\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
             "title": "P12 - Highly Divisible Triangular Number"
         },
         {
             "location": "/problems/p013/",
-            "text": "Large sum\n\n\n\n\n\nWork out the first ten digits of the sum of the following one-hundred 50-digit numbers.\n\n(SEE PROJECT EULER OR INPUT FOLDER FOR VALUE)\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "text": "Large sum\n\n\n\n\n\nWork out the first ten digits of the sum of the following one-hundred 50-digit numbers.\n\n(SEE PROJECT EULER OR INPUT FOLDER FOR VALUE)\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nPure python everyone...this problem could be cooler outside of python, \nrequiring manual addition, maybe another time\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
             "title": "P13 - Large Sum"
+        },
+        {
+            "location": "/problems/p014/",
+            "text": "Longest Collatz sequence\n\n\n\n\n\nThe following iterative sequence is defined for the set of positive integers:\n\nn \u2192 n/2 (n is even)\n\nn \u2192 3n + 1 (n is odd)\n\nUsing the rule above and starting with 13, we generate the following sequence:\n\n13 \u2192 40 \u2192 20 \u2192 10 \u2192 5 \u2192 16 \u2192 8 \u2192 4 \u2192 2 \u2192 1\n\nIt can be seen that this sequence (starting at 13 and finishing at 1) contains 10 terms. \nAlthough it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1.\n\nWhich starting number, under one million, produces the longest chain?\n\nNOTE: Once the chain starts the terms are allowed to go above one million.\n\n\n\n\nIntrinsic Functions\n\n\n\ndef memoized_collatz_chain(n, chains)\n\n\n\n\n\n\nDetermines the length of the sequence until 1 using n as a base\n\n\n\n\n\n\nArgs:\n\n\n\n\n\n\n\n\nn\n \nInteger\n: Value to start the collatz sequence from\n\n\nchains\n \nDict\n: Dictionary containing previously computed chains\n\n\n\n\n\n\n\n\nReturns \nInteger\n: Number of values in the chain until 1 for n\n\n\n\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nUtilizes memoization of the results of the collatz chains and \ncalculated for each value under 1000000\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "title": "P14 - Longest Collatz Sequence"
+        },
+        {
+            "location": "/problems/p015/",
+            "text": "Lattice paths\n\n\n\n\n\nStarting in the top left corner of a 2\u00d72 grid, and only being able to move to the right and down, \nthere are exactly 6 routes to the bottom right corner.\n\nHow many such routes are there through a 20\u00d720 grid?\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nThis requires a very small bit of dynamic programming to determine \nthat a given vertex has the sum of the routes to its right and bottom values.\n\nFurthermore this is then calculated by determining the edges have only 1 path \navailable and calculating the matrix from the bottom right corner in.\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "title": "P15 - Lattice Paths"
+        },
+        {
+            "location": "/problems/p016/",
+            "text": "Power Digit Sum\n\n\n\n\n\n2\n15\n = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.\n\nWhat is the sum of the digits of the number 2\n1000\n?\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nPython makes this a joke...\n\nAt least the code is pretty...\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "title": "P16 - Power Digit Sum"
+        },
+        {
+            "location": "/problems/p017/",
+            "text": "Number letter counts\n\n\n\n\n\nIf the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are \n3 + 3 + 5 + 4 + 4 = 19 letters used in total.\n\nIf all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, \nhow many letters would be used?\n\nNOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 \nletters and 115 (one hundred and fifteen) contains 20 letters. The use of \"and\" when writing out \nnumbers is in compliance with British usage.\n\n\n\n\nIntrinsic Functions\n\n\n\ndef to_english(n)\n\n\n\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nOoh, British Compliance\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "title": "P17 - Number Letter Counts"
+        },
+        {
+            "location": "/problems/p018/",
+            "text": "Maximum path sum I\n\n\n\n\n\nBy starting at the top of the triangle below and moving to adjacent numbers on the row below, \nthe maximum total from top to bottom is 23.\n\n3\n\n7 4\n\n2 4 6\n\n8 5 9 3\n\nThat is, 3 + 7 + 4 + 9 = 23.\n\nFind the maximum total from top to bottom of the triangle below:\n\n(SEE PROJECT EULER OR INPUT FOLDER FOR VALUE)\n\nNOTE: As there are only 16384 routes, it is possible to solve this problem by trying every route. \nHowever, Problem 67, is the same challenge with a triangle containing one-hundred rows; it cannot \nbe solved by brute force, and requires a clever method! ;o)\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nNote: Adjacent for my input means numbers below one level at the \nsame position or one to the right.\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "title": "P18 - Maximum Path Sum I"
+        },
+        {
+            "location": "/problems/p019/",
+            "text": "Counting Sundays\n\n\n\n\n\nYou are given the following information, but you may prefer to do some research for yourself.\n\n    1 Jan 1900 was a Monday.\n\n    Thirty days has September,\n\n    April, June and November.\n\n    All the rest have thirty-one,\n\n    Saving February alone,\n\n    Which has twenty-eight, rain or shine.\n\n    And on leap years, twenty-nine.\n\n    A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.\n\nHow many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?\n\n\n\n\nIntrinsic Functions\n\n\n\ndef is_leap_year(year)\n\n\n\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nIncremented each day and checked from Jan 1st, 1900\n(excluded any match in 1900 until 1901 was reached)\n\nUsed this for testing: \nhttps://www.onthisday.com/\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "title": "P19 - Counting Sundays"
+        },
+        {
+            "location": "/problems/p020/",
+            "text": "Factorial digit sum\n\n\n\n\n\nn! means n \u00d7 (n \u2212 1) \u00d7 ... \u00d7 3 \u00d7 2 \u00d7 1\n\nFor example, 10! = 10 \u00d7 9 \u00d7 ... \u00d7 3 \u00d7 2 \u00d7 1 = 3628800,\n\nand the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.\n\nFind the sum of the digits in the number 100!\n\n\n\n\nIntrinsic Functions\n\n\n\ndef main()\n\n\n\n\n\n\nSolves this problem\n\n\nSimply allow python to work its magic and do what it does well.\n\nA.K.A. Lots of conversions and reduce method for factorial\n\n\n\n\n\n\nReturns \nInteger\n: Solution to this problem",
+            "title": "P20 - Factorial Digit Sum"
         },
         {
             "location": "/utils/stopwatch/",
@@ -82,12 +117,12 @@
         },
         {
             "location": "/utils/fibonacci/",
-            "text": "Fibonacci's Algorithms\n\n\n\nIntrinsic Functions\n\n\n\ndef trial_division(n)\n\n\n\n\n\n\nTrial Division\n\n\n\n\n\n\nReturns \nArray\n: List of factors of n\n\n\n\n\n\n\ndef factors_to_dictionary(factors)\n\n\n\n\n\n\nTransforms a list of factors into a dictionary\n\n\n\n\n\n\nArgs:\n\n\n\n\n\n\n\n\nfactors\n \nlist\n: List of factors\n\n\n\n\n\n\n\n\nReturns \ndict\n: Dictionary of factors to count\n\n\n\n\n\n\ndef fib_basic(n)\n\n\n\n\n\n\nSimple fibonacci sequence implementation\n\n\n\n\n\n\nReturns \nInteger\n: Value of the fibonacci sequence at the provided index\n\n\n\n\n\n\ndef fib(n)\n\n\n\n\n\n\nOptimized fibonacci sequence implementation utilizing memoization\n\n\n\n\n\n\nReturns \nInteger\n: Value of the fibonacci sequence at the provided index\n\n\n\n\n\n\ndef _fib(n, memoization)\n\n\n\n\n\n\n[Internal] Recursive fibonacci sequence implementation utilizing memoization\n\n\n\n\n\n\nArgs:\n\n\n\n\n\n\n\n\nn\n \nInteger\n: Index of the fibonacci number\n\n\nmemoization\n \nDictionary\n: Non-Null dictionary with prior memoized values\n\n\n\n\n\n\n\n\nReturns \nInteger\n: Value of the fibonacci sequence at the provided index",
+            "text": "Fibonacci's Algorithms\n\n\n\nIntrinsic Functions\n\n\n\ndef trial_division(n)\n\n\n\n\n\n\nTrial Division\n\n\nArguments:\n    n (Integer): Number to factor\n\n\n\n\n\n\nReturns \nArray\n: List of factors of n\n\n\n\n\n\n\ndef factors_to_dictionary(factors)\n\n\n\n\n\n\nTransforms a list of factors into a dictionary\n\n\n\n\n\n\nArgs:\n\n\n\n\n\n\n\n\nfactors\n \nlist\n: List of factors\n\n\n\n\n\n\n\n\nReturns \ndict\n: Dictionary of factors to count\n\n\n\n\n\n\ndef fib_basic(n)\n\n\n\n\n\n\nSimple fibonacci sequence implementation\n\n\nArguments:\n    n (Integer): Index of the fibonacci number\n\n\n\n\n\n\nReturns \nInteger\n: Value of the fibonacci sequence at the provided index\n\n\n\n\n\n\ndef fib(n)\n\n\n\n\n\n\nOptimized fibonacci sequence implementation utilizing memoization\n\n\nArguments:\n    n (Integer): Index of the fibonacci number\n\n\n\n\n\n\nReturns \nInteger\n: Value of the fibonacci sequence at the provided index\n\n\n\n\n\n\ndef _fib(n, memoization)\n\n\n\n\n\n\n[Internal] Recursive fibonacci sequence implementation utilizing memoization\n\n\n\n\n\n\nArgs:\n\n\n\n\n\n\n\n\nn\n \nInteger\n: Index of the fibonacci number\n\n\nmemoization\n \nDictionary\n: Non-Null dictionary with prior memoized values\n\n\n\n\n\n\n\n\nReturns \nInteger\n: Value of the fibonacci sequence at the provided index",
             "title": "Fibonacci"
         },
         {
             "location": "/utils/oeis/",
-            "text": "The On-Line Encyclopedia of Integer Sequences\n\n\n\n\n\nThis is an online database of useful sequences and some initial values to quickly \nretrieve a formula rather than coming up with one yourself.\n\n\n\n\nIntrinsic Functions\n\n\n\ndef square_pyramidal_numbers(n)\n\n\n\n\n\n\nSquare Pyramidal Numbers - A000330\n\n\n\n\n\n\nReturns \nInteger\n: Value of this sequence at the specified index\n\n\n\n\n\n\ndef triangular_numbers(n)\n\n\n\n\n\n\nTriangular Numbers - A000217\n\n\n\n\n\n\nReturns \nInteger\n: Value of this sequence at the specified index",
+            "text": "The On-Line Encyclopedia of Integer Sequences\n\n\n\n\n\nThis is an online database of useful sequences and some initial values to quickly \nretrieve a formula rather than coming up with one yourself.\n\n\n\n\nIntrinsic Functions\n\n\n\ndef collatz(n)\n\n\n\n\n\n\nCollatz Sequence\n\n\n\n\n\n\nArgs:\n\n\n\n\n\n\n\n\nn\n \nInteger\n: Current Value of the Collatz Sequence\n\n\n\n\n\n\n\n\nReturns \nInteger\n: Result of the next value in the Collatz Sequence following n\n\n\n\n\n\n\ndef square_pyramidal_numbers(n)\n\n\n\n\n\n\nSquare Pyramidal Numbers - A000330\n\n\nArguments:\n    n (Integer): Index of the sequence\n\n\n\n\n\n\nReturns \nInteger\n: Value of this sequence at the specified index\n\n\n\n\n\n\ndef triangular_numbers(n)\n\n\n\n\n\n\nTriangular Numbers - A000217\n\n\nArguments:\n    n (Integer): Index of the sequence\n\n\n\n\n\n\nReturns \nInteger\n: Value of this sequence at the specified index",
             "title": "OEIS"
         },
         {

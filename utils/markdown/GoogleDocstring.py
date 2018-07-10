@@ -6,40 +6,35 @@ class GoogleDocstringReturn:
         self._docstring = docstring
         self._reg = re.match(r'(.+): (.+)', docstring.strip())
     
-
     def return_type(self):
         return self._reg.group(1)
 
-
     def description(self):
         return self._reg.group(2)
+
 
 class GoogleDocstringArgument:
     def __init__(self, docstring):
         self._docstring = docstring
         self._reg = re.match(r'(.+) \((.+)\): (.+)', docstring.strip())
 
-
     def name(self):
         return self._reg.group(1)
     
-
     def arg_type(self):
         return self._reg.group(2)
 
-
     def description(self):
         return self._reg.group(3)
+
 
 class GoogleFunctionDocstring:
     def __init__(self, function_def):
         self._def = function_def
         self._docstring = ast.get_docstring(function_def)
 
-
     def is_valid(self):
         return self._docstring != None
-
 
     def name(self):
         args = []
@@ -48,10 +43,14 @@ class GoogleFunctionDocstring:
                 args.append(arg.arg)
         return '{}({})'.format(self._def.name, ', '.join(args))
 
-
     def short_description(self):
-        return self._docstring.split('\n')[0]
-
+        desc = []
+        split = self._docstring.split('\n')
+        for i in range(len(split)):
+            if 'Returns:' in split[i] or 'Args:' in split[i]:
+                break
+            desc.append(split[i])
+        return '\n'.join(desc)
 
     def arguments(self):
         args = []
@@ -69,7 +68,6 @@ class GoogleFunctionDocstring:
             conv_args.append(GoogleDocstringArgument(arg))
         return conv_args
 
-
     def return_description(self):
         is_return_section = False
         for s in self._docstring.split('\n'):
@@ -81,19 +79,17 @@ class GoogleFunctionDocstring:
             elif s.startswith('Returns:'):
                 is_return_section = True
 
+
 class GoogleClassDocstring:
     def __init__(self, class_def):
         self._def = class_def
         self._docstring = ast.get_docstring(class_def)
 
-
     def name(self):
         return self._def.name
 
-
     def description(self):
         return self._docstring
-
 
     def constructors(self):
         ctors = []
@@ -102,7 +98,6 @@ class GoogleClassDocstring:
                 if module.name == '__init__':
                     ctors.append(GoogleFunctionDocstring(module))
         return ctors
-
 
     def methods(self):
         mtds = []
