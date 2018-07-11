@@ -26,7 +26,13 @@ pages:
   - P18 - Maximum Path Sum I: problems/p018.md
   - P19 - Counting Sundays: problems/p019.md
   - P20 - Factorial Digit Sum: problems/p020.md
+  - P21 - Amicable Numbers: problems/p021.md
+  - P22 - Names Scores: problems/p022.md
+  - P23 - Non-Abundant Sums: problems/p023.md
+  - P24 - Lexicographic Permutations: problems/p024.md
+  - P25 - 1000-Digit Fibonacci Number: problems/p025.md
 - Utils:
+  - Init: utils/__init__.md
   - Stopwatch: utils/stopwatch.md
   - Eratosthenes: utils/eratosthenes.md
   - Fibonacci: utils/fibonacci.md

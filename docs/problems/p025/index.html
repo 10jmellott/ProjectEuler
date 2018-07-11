@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>P15 - Lattice Paths - Project Euler</title>
+  <title>P25 - 1000-Digit Fibonacci Number - Project Euler</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "P15 - Lattice Paths";
-    var mkdocs_page_input_path = "problems\\p015.md";
-    var mkdocs_page_url = "/problems/p015/";
+    var mkdocs_page_name = "P25 - 1000-Digit Fibonacci Number";
+    var mkdocs_page_input_path = "problems\\p025.md";
+    var mkdocs_page_url = "/problems/p025/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -113,12 +113,9 @@
                     
     <a class="" href="../p014/">P14 - Longest Collatz Sequence</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">P15 - Lattice Paths</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="../p015/">P15 - Lattice Paths</a>
                 </li>
                 <li class="">
                     
@@ -156,9 +153,12 @@
                     
     <a class="" href="../p024/">P24 - Lexicographic Permutations</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../p025/">P25 - 1000-Digit Fibonacci Number</a>
+    <a class="current" href="./">P25 - 1000-Digit Fibonacci Number</a>
+    <ul class="subnav">
+            
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -239,10 +239,10 @@
         
       
     
-    <li>P15 - Lattice Paths</li>
+    <li>P25 - 1000-Digit Fibonacci Number</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/problems/p015.md"
+        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/problems/p025.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -252,12 +252,26 @@
           <div role="main">
             <div class="section">
               
-                <h1><a href="https://projecteuler.net/problem=15" class="title-custom-link">Lattice paths</a></h1>
+                <h1><a href="https://projecteuler.net/problem=25" class="title-custom-link">1000-digit Fibonacci number</a></h1>
 
 <blockquote>
-<p>Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, 
-there are exactly 6 routes to the bottom right corner.<br />
-How many such routes are there through a 20×20 grid?</p>
+<p>The Fibonacci sequence is defined by the recurrence relation:<br />
+    F<sub>n</sub> = F<sub>n−1</sub> + F<sub>n−2</sub>, where F<sub>1</sub> = 1 and F<sub>2</sub> = 1.<br />
+Hence the first 12 terms will be:<br />
+    F<sub>1</sub> = 1<br />
+    F<sub>2</sub> = 1<br />
+    F<sub>3</sub> = 2<br />
+    F<sub>4</sub> = 3<br />
+    F<sub>5</sub> = 5<br />
+    F<sub>6</sub> = 8<br />
+    F<sub>7</sub> = 13<br />
+    F<sub>8</sub> = 21<br />
+    F<sub>9</sub> = 34<br />
+    F<sub>10</sub> = 55<br />
+    F<sub>11</sub> = 89<br />
+    F<sub>12</sub> = 144<br />
+The 12th term, F<sub>12</sub>, is the first term to contain three digits.<br />
+What is the index of the first term in the Fibonacci sequence to contain 1000 digits?</p>
 </blockquote>
 <h2>Intrinsic Functions</h2>
 
@@ -266,10 +280,10 @@ How many such routes are there through a 20×20 grid?</p>
 
 <div style="margin-left: 30px;">
 <p>Solves this problem</p>
-<p>This requires a very small bit of dynamic programming to determine 
-that a given vertex has the sum of the routes to its right and bottom values.<br />
-Furthermore this is then calculated by determining the edges have only 1 path 
-available and calculating the matrix from the bottom right corner in.</p>
+<p>Keeping a list of memoized values I increment (starting arbitrarily from 1000) and continue
+to calculate the fibonacci values until the length of the str number is &gt; 999.  </p>
+<p>This required utilization of a looped fibonacci method as the 
+indices exceed python's recursion limits.</p>
 </div>
 <div style="margin-left: 30px;">
 <p>Returns <em>Integer</em>: Solution to this problem</p>
@@ -281,10 +295,10 @@ available and calculating the matrix from the bottom right corner in.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../p016/" class="btn btn-neutral float-right" title="P16 - Power Digit Sum">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../utils/__init__/" class="btn btn-neutral float-right" title="Init">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../p014/" class="btn btn-neutral" title="P14 - Longest Collatz Sequence"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../p024/" class="btn btn-neutral" title="P24 - Lexicographic Permutations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -312,10 +326,10 @@ available and calculating the matrix from the bottom right corner in.</p>
           <a href="https://github.com/10jmellott/ProjectEuler/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../p014/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../p024/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../p016/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../utils/__init__/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

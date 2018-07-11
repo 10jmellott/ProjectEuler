@@ -5,7 +5,7 @@ retrieve a formula rather than coming up with one yourself.
 
 
 def collatz(n):
-    """[Collatz Sequence](https://oeis.org/A006370)
+    """[Collatz Sequence - A006370](https://oeis.org/A006370)
     
     Args:
         n (Integer): Current Value of the Collatz Sequence

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>P15 - Lattice Paths - Project Euler</title>
+  <title>P24 - Lexicographic Permutations - Project Euler</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "P15 - Lattice Paths";
-    var mkdocs_page_input_path = "problems\\p015.md";
-    var mkdocs_page_url = "/problems/p015/";
+    var mkdocs_page_name = "P24 - Lexicographic Permutations";
+    var mkdocs_page_input_path = "problems\\p024.md";
+    var mkdocs_page_url = "/problems/p024/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -113,12 +113,9 @@
                     
     <a class="" href="../p014/">P14 - Longest Collatz Sequence</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">P15 - Lattice Paths</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="../p015/">P15 - Lattice Paths</a>
                 </li>
                 <li class="">
                     
@@ -152,9 +149,12 @@
                     
     <a class="" href="../p023/">P23 - Non-Abundant Sums</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../p024/">P24 - Lexicographic Permutations</a>
+    <a class="current" href="./">P24 - Lexicographic Permutations</a>
+    <ul class="subnav">
+            
+    </ul>
                 </li>
                 <li class="">
                     
@@ -239,10 +239,10 @@
         
       
     
-    <li>P15 - Lattice Paths</li>
+    <li>P24 - Lexicographic Permutations</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/problems/p015.md"
+        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/problems/p024.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -252,12 +252,14 @@
           <div role="main">
             <div class="section">
               
-                <h1><a href="https://projecteuler.net/problem=15" class="title-custom-link">Lattice paths</a></h1>
+                <h1><a href="https://projecteuler.net/problem=24" class="title-custom-link">Lexicographic permutations</a></h1>
 
 <blockquote>
-<p>Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, 
-there are exactly 6 routes to the bottom right corner.<br />
-How many such routes are there through a 20×20 grid?</p>
+<p>A permutation is an ordered arrangement of objects. For example, 3124 is one possible 
+permutation of the digits 1, 2, 3 and 4. If all of the permutations are listed numerically 
+or alphabetically, we call it lexicographic order. The lexicographic permutations of 0, 1 and 2 are:<br />
+012   021   102   120   201   210<br />
+What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?</p>
 </blockquote>
 <h2>Intrinsic Functions</h2>
 
@@ -266,10 +268,11 @@ How many such routes are there through a 20×20 grid?</p>
 
 <div style="margin-left: 30px;">
 <p>Solves this problem</p>
-<p>This requires a very small bit of dynamic programming to determine 
-that a given vertex has the sum of the routes to its right and bottom values.<br />
-Furthermore this is then calculated by determining the edges have only 1 path 
-available and calculating the matrix from the bottom right corner in.</p>
+<p>Permutes a list of string digits.<br />
+Returns the indexed the millionth value.</p>
+<p>Quite positive this could be dynamically calculated, 
+but the number of permutations is only 10! (factorial) 
+which is ~3.6 million, so not that bad</p>
 </div>
 <div style="margin-left: 30px;">
 <p>Returns <em>Integer</em>: Solution to this problem</p>
@@ -281,10 +284,10 @@ available and calculating the matrix from the bottom right corner in.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../p016/" class="btn btn-neutral float-right" title="P16 - Power Digit Sum">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../p025/" class="btn btn-neutral float-right" title="P25 - 1000-Digit Fibonacci Number">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../p014/" class="btn btn-neutral" title="P14 - Longest Collatz Sequence"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../p023/" class="btn btn-neutral" title="P23 - Non-Abundant Sums"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -312,10 +315,10 @@ available and calculating the matrix from the bottom right corner in.</p>
           <a href="https://github.com/10jmellott/ProjectEuler/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../p014/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../p023/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../p016/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../p025/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

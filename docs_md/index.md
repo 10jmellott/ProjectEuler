@@ -25,6 +25,11 @@ Solved:
 * [018 - Maximum Path Sum I](https://10jmellott.github.io/ProjectEuler/problems/p018/)
 * [019 - Counting Sundays](https://10jmellott.github.io/ProjectEuler/problems/p019/)
 * [020 - Factorial Digit Sum](https://10jmellott.github.io/ProjectEuler/problems/p020/)
+* [021 - Amicable Numbers](https://10jmellott.github.io/ProjectEuler/problems/p021/)
+* [022 - Names Scores](https://10jmellott.github.io/ProjectEuler/problems/p022/)
+* [023 - Non-Abundant Sums](https://10jmellott.github.io/ProjectEuler/problems/p023/)
+* [024 - Lexicographic Permutations](https://10jmellott.github.io/ProjectEuler/problems/p024/)
+* [025 - 1000-Digit Fibonacci Number](https://10jmellott.github.io/ProjectEuler/problems/p025/)
 
 
 Author: [Joshua Mellott-Lillie](https://10jmellott.github.io/)

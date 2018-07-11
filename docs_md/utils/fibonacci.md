@@ -85,6 +85,8 @@ def fib(n)
 
 Optimized fibonacci sequence implementation utilizing memoization
 
+Implemented as recursion. Use fib_loop for large n.
+
 Arguments:
     n (Integer): Index of the fibonacci number
 
@@ -100,12 +102,70 @@ Returns *Integer*: Value of the fibonacci sequence at the provided index
 ------
 
 ```python
-def _fib(n, memoization)
+def fib_memo(n, memoization)
 ```
 
 <div markdown="1" style="margin-left: 30px;">
 
-[Internal] Recursive fibonacci sequence implementation utilizing memoization
+Recursive fibonacci sequence implementation utilizing memoization
+
+
+</div>
+
+<div markdown="1" style="margin-left: 30px;">
+
+Args:
+
+</div>
+
+<div markdown="1" style="margin-left: 30px;">
+
+* **n** *Integer*: Index of the fibonacci number
+* **memoization** *Dictionary*: Non-Null dictionary with prior memoized values
+
+</div>
+
+<div markdown="1" style="margin-left: 30px;">
+
+Returns *Integer*: Value of the fibonacci sequence at the provided index
+
+</div>
+
+------
+
+```python
+def fib_loop(n)
+```
+
+<div markdown="1" style="margin-left: 30px;">
+
+Optimized fibonacci sequence implementation utilizing memoization.
+
+Implemented as a loop. Use for large n.
+
+Arguments:
+    n (Integer): Index of the fibonacci number
+
+
+</div>
+
+<div markdown="1" style="margin-left: 30px;">
+
+Returns *Integer*: Value of the fibonacci sequence at the provided index
+
+</div>
+
+------
+
+```python
+def fib_memo_loop(n, memo)
+```
+
+<div markdown="1" style="margin-left: 30px;">
+
+Looping recursive fibonacci sequence implementation utilizing memoization.
+
+Use for large n.
 
 
 </div>

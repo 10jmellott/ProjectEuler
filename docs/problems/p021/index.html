@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>P15 - Lattice Paths - Project Euler</title>
+  <title>P21 - Amicable Numbers - Project Euler</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "P15 - Lattice Paths";
-    var mkdocs_page_input_path = "problems\\p015.md";
-    var mkdocs_page_url = "/problems/p015/";
+    var mkdocs_page_name = "P21 - Amicable Numbers";
+    var mkdocs_page_input_path = "problems\\p021.md";
+    var mkdocs_page_url = "/problems/p021/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -113,12 +113,9 @@
                     
     <a class="" href="../p014/">P14 - Longest Collatz Sequence</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">P15 - Lattice Paths</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="../p015/">P15 - Lattice Paths</a>
                 </li>
                 <li class="">
                     
@@ -140,9 +137,12 @@
                     
     <a class="" href="../p020/">P20 - Factorial Digit Sum</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../p021/">P21 - Amicable Numbers</a>
+    <a class="current" href="./">P21 - Amicable Numbers</a>
+    <ul class="subnav">
+            
+    </ul>
                 </li>
                 <li class="">
                     
@@ -239,10 +239,10 @@
         
       
     
-    <li>P15 - Lattice Paths</li>
+    <li>P21 - Amicable Numbers</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/problems/p015.md"
+        <a href="https://github.com/10jmellott/ProjectEuler/edit/master/docs/problems/p021.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -252,12 +252,14 @@
           <div role="main">
             <div class="section">
               
-                <h1><a href="https://projecteuler.net/problem=15" class="title-custom-link">Lattice paths</a></h1>
+                <h1><a href="https://projecteuler.net/problem=21" class="title-custom-link">Amicable numbers</a></h1>
 
 <blockquote>
-<p>Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, 
-there are exactly 6 routes to the bottom right corner.<br />
-How many such routes are there through a 20×20 grid?</p>
+<p>Let d(n) be defined as the sum of proper divisors of n (numbers less than n which divide evenly into n).<br />
+If d(a) = b and d(b) = a, where a ≠ b, then a and b are an amicable pair and each of a and b are called amicable numbers.<br />
+For example, the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 and 110; therefore d(220) = 284. 
+The proper divisors of 284 are 1, 2, 4, 71 and 142; so d(284) = 220.<br />
+Evaluate the sum of all the amicable numbers under 10000.</p>
 </blockquote>
 <h2>Intrinsic Functions</h2>
 
@@ -266,10 +268,9 @@ How many such routes are there through a 20×20 grid?</p>
 
 <div style="margin-left: 30px;">
 <p>Solves this problem</p>
-<p>This requires a very small bit of dynamic programming to determine 
-that a given vertex has the sum of the routes to its right and bottom values.<br />
-Furthermore this is then calculated by determining the edges have only 1 path 
-available and calculating the matrix from the bottom right corner in.</p>
+<p>Calculates the sum of the factors of all numbers under 10000.<br />
+Then checks each result for amicable numbers.<br />
+Nothing very special in terms of calculations.</p>
 </div>
 <div style="margin-left: 30px;">
 <p>Returns <em>Integer</em>: Solution to this problem</p>
@@ -281,10 +282,10 @@ available and calculating the matrix from the bottom right corner in.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../p016/" class="btn btn-neutral float-right" title="P16 - Power Digit Sum">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../p022/" class="btn btn-neutral float-right" title="P22 - Names Scores">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../p014/" class="btn btn-neutral" title="P14 - Longest Collatz Sequence"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../p020/" class="btn btn-neutral" title="P20 - Factorial Digit Sum"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -312,10 +313,10 @@ available and calculating the matrix from the bottom right corner in.</p>
           <a href="https://github.com/10jmellott/ProjectEuler/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../p014/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../p020/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../p016/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../p022/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

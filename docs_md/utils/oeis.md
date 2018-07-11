@@ -11,7 +11,7 @@ def collatz(n)
 
 <div markdown="1" style="margin-left: 30px;">
 
-[Collatz Sequence](https://oeis.org/A006370)
+[Collatz Sequence - A006370](https://oeis.org/A006370)
 
 
 </div>
